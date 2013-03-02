@@ -23,5 +23,5 @@ To start contributing, please contact TakeLab through Github, or at:
 takelab@fer.hr
 
 For more information, please see:
-http://takelab.fer.hr
+http://takelab.fer.hr and 
 http://takelab.fer.hr/coral/
