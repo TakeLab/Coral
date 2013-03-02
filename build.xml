@@ -1,0 +1,55 @@
+<project name="SAP" basedir="." default="run">
+	<property name="src.dir" value="src"/>
+	<property name="build.dir" value="build"/>
+	<property name="manifest.file" value="./META-INF/MANIFEST.MF"/>
+	<property name="jar.file" value="SAP.jar"/>
+	
+	<path id="src.class.path">
+		<pathelement path="${build.dir}"/>
+	</path>
+	
+	<target name="init">
+		<available file="config.xml" property="config.xml.present"/>
+		<fail unless="config.xml.present">
+			"config.xml" file is not present.
+		</fail>
+		
+		<available file="${manifest.file}" property="manifest.mf.present"/>
+		<fail unless="manifest.mf.present">
+			"${manifest.file}" file is not present.
+		</fail>
+		
+		<available file="icons" type="dir" property="icons.present"/>
+		<fail unless="icons.present">
+			"icons" directory is not present.
+		</fail>
+		
+		<mkdir dir="${build.dir}"/>
+		<tstamp/>
+	</target>
+	
+	<target name="compile" depends="init">
+		<javac destdir="${build.dir}" includeAntRuntime="false" debug="true" debuglevel="lines,vars,source" encoding="UTF-8">
+			<src path="${src.dir}"/>
+			<classpath refid="src.class.path"/>
+		</javac>
+	</target>
+	
+	<target name="package" depends="compile">
+		<jar destfile="${jar.file}" manifest="${manifest.file}">
+			<fileset dir="${build.dir}" includes="**/*.class"/>
+		</jar>
+	</target>
+	
+	<target name="run" depends="package">
+		<java jar="${jar.file}" failOnError="true" fork="true"/>
+	</target>
+	
+	<target name="clean">
+		<delete includeEmptyDirs="true">
+			<fileset dir="${build.dir}"/>
+		</delete>
+		<delete file="${jar.file}"/>
+	</target>
+	
+</project>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>English language file</comment>
+<entry key="menuFile">File</entry>
+<entry key="menuEdit">Edit</entry>
+<entry key="menuProject">Project</entry>
+<entry key="menuSettings">Settings</entry>
+<entry key="menuHelp">Help</entry>
+<entry key="menuCreateProject">New Project</entry>
+<entry key="menuContinueProject">Continue Project</entry>
+<entry key="menuOpen">Open Project</entry>
+<entry key="menuSave">Save Project</entry>
+<entry key="menuSaveAs">Save Project As</entry>
+<entry key="menuExport">Export</entry>
+<entry key="menuExit">Exit</entry>
+<entry key="menuAbout">About</entry>
+<entry key="openWinTitle">Open</entry>
+<entry key="SelSrcXML">Select source XML files</entry>
+<entry key="SelFirstXML">Select first source file:</entry>
+<entry key="SelSecXML">Select second source file:</entry>
+<entry key="isSentenceSplitted">File contains text seperated in sentences</entry>
+<entry key="labelLanguage">Language:</entry>
+<entry key="labelFile">File:</entry>
+
+<entry key="editProjectWindow">Edit project</entry>
+<entry key="chProjName">Change project name:</entry>
+<entry key="chLeftLanguage">Change left language:</entry>
+<entry key="chRightLanguage">Change right language:</entry>
+
+<entry key="popupRemoveSelectedConn">Remove selected connections</entry>
+<entry key="popupRemoveAllConn">Remove all connections</entry>
+<entry key="popupRemoveIconsConn">Remove connections</entry>
+<entry key="popupRemoveConnection">Remove Connection</entry>
+<entry key="messageConfDelConnText">Are you sure you want to delete multiple connections?
+
+Number of connections that will be deleted: </entry>
+<entry key="msgRemoveConfDelConnTitle">Confirm Connections Delete</entry>
+
+<entry key="buttonOK">OK</entry>
+<entry key="buttonCancel">Cancel</entry>
+<entry key="buttonYes">Yes</entry>
+<entry key="buttonNo">No</entry>
+</properties>

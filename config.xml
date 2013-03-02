@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>config.xml</comment>
+<entry key="sboardShowMenu">false</entry>
+<entry key="fontColor2">0x000000</entry>
+<entry key="selectedFontColor">0xffffff</entry>
+<entry key="fontColor1">0x000000</entry>
+<entry key="lastOpenDir">C:\Documents and Settings\Igor\Desktop\bla.razor</entry>
+<entry key="scrollType">together</entry>
+<entry key="unsafeSplitColor">0xe4b452</entry>
+<entry key="listSelectedColor">0x000099</entry>
+<entry key="sboardScrollAmount">10</entry>
+<entry key="listColor2">0xccffff</entry>
+<entry key="fontSize">11</entry>
+<entry key="listColor1">0xffffff</entry>
+<entry key="markOKOnSelect">false</entry>
+<entry key="sboardTreshold">5</entry>
+</properties>
